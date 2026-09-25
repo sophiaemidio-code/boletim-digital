@@ -1,12 +1,70 @@
 <!DOCTYPE html>
-<html lang="pt-BR"
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>boletim digital</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boletim Digital</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+  <div class="container">
+    <!-- Cabeçalho Principal -->
+    <header class="cabecalho">
+      <h1>Boletim Digital</h1>
+      <p class="subtitulo">Estudante: <strong>Estudante Exemplo</strong> | <strong>8º Ano</strong></p>
+    </header>
+
+    <!-- Área de Cards de Resumo -->
+    <section class="cards-resumo">
+      <div class="card">
+        <h3>Média Geral</h3>
+        <p id="card-media">—</p>
+      </div>
+      <div class="card">
+        <h3>Total de Faltas</h3>
+        <p id="card-faltas">—</p>
+      </div>
+      <div class="card">
+        <h3>Bom Desempenho</h3>
+        <p id="card-bom-desempenho">—</p>
+      </div>
+      <div class="card">
+        <h3>Precisa de Atenção</h3>
+        <p id="card-atencao">—</p>
+      </div>
+      <div class="card">
+        <h3>Frequência Geral</h3>
+        <p id="card-frequencia">92%</p>
+        <span class="status-frequencia">Frequência adequada</span>
+      </div>
+    </section>
+
+    <!-- Tabela de Disciplinas -->
+    <section class="secao-tabela">
+      <h2>Notas por Disciplina</h2>
+      <div class="tabela-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Disciplina</th>
+              <th>1º Tri</th>
+              <th>2º Tri</th>
+              <th>3º Tri</th>
+              <th>Média</th>
+              <th>Faltas</th>
+              <th>Situação</th>
+            </tr>
+          </thead>
+          <!-- O corpo da tabela será preenchido pelo JavaScript -->
+          <tbody id="corpo-tabela">
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+
+  <!-- Conexão com o script em JavaScript -->
+  <script src="script.js"></script>
 </body>
 </html>
