@@ -1,6 +1,4 @@
-//
-c
-     // DADOS ATUALIZADOS DO 8º ANO
+//  // DADOS ATUALIZADOS DO 8º ANO
 const dadosDisciplinas = [
   { disciplina: "Língua Portuguesa", tri1: "6,2", tri2: "6,0", tri3: null, faltas: [4, 0, 0] },
   { disciplina: "Matemática", tri1: "5,7", tri2: "6,9", tri3: null, faltas: [4, 0, 0] },
