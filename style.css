@@ -1,0 +1,139 @@
+/* Configurações gerais e fonte */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f7f5ff; /* Fundo roxo bem suave */
+  color: #2d2338;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Cabeçalho */
+.cabecalho {
+  background-color: #ffd600; /* Amarelo vibrante */
+  color: #3a0ca3; /* Texto roxo escuro */
+  padding: 25px;
+  border-radius: 16px;
+  text-align: center;
+  margin-bottom: 25px;
+  box-shadow: 0 8px 20px rgba(58, 12, 163, 0.15); /* Sombra suave flutuante */
+}
+
+.cabecalho h1 {
+  font-size: 2.2rem;
+  margin-bottom: 8px;
+}
+
+.subtitulo {
+  font-size: 1.1rem;
+  color: #4361ee;
+}
+
+/* Área dos Cards de Resumo */
+.cards-resumo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.card {
+  background-color: #ffffff;
+  border-top: 5px solid #7209b7; /* Detalhe roxo no topo do card */
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  /* Sombra leve para dar o efeito de flutuar */
+  box-shadow: 0 6px 15px rgba(114, 9, 183, 0.1);
+  transition: transform 0.2s ease;
+}
+
+/* Efeito de elevação ao passar o mouse */
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  font-size: 0.95rem;
+  color: #5c677d;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #3a0ca3;
+}
+
+.status-frequencia {
+  display: block;
+  font-size: 0.8rem;
+  color: #2b9348;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+/* Seção da Tabela */
+.secao-tabela {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(114, 9, 183, 0.08);
+}
+
+.secao-tabela h2 {
+  color: #3a0ca3;
+  margin-bottom: 18px;
+  font-size: 1.4rem;
+}
+
+/* Tabela Responsiva */
+.tabela-container {
+  overflow-x: auto; /* Permite rolar para os lados no celular se necessário */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  padding: 12px 14px;
+  border-bottom: 1px solid #e9ecef;
+}
+
+th {
+  background-color: #ffea00; /* Amarelo nos títulos da tabela */
+  color: #3a0ca3;
+  font-weight: bold;
+}
+
+tr:hover {
+  background-color: #f8f0fc; /* Destaque roxo bem claro na linha */
+}
+
+/* Estilos de Situação */
+.situacao-bom {
+  color: #2b9348;
+  font-weight: bold;
+}
+
+.situacao-atencao {
+  color: #d90429;
+  font-weight: bold;
+}
+
+.situacao-indisponivel {
+  color: #6c757d;
+  font-style: italic;
+}
